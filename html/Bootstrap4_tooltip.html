@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Bootstrap4 提示框</h1>
+        <h5>如何创建提示框</h5>
+        <a href="#" data-toggle="tooltip" title="我是提示内容！">鼠标移动到我这里</a>
+        <br/><br/>
+
+        <h5>指定提示框的位置</h5>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="我是提示内容!">上方</a>
+        <a href="#" data-toggle="tooltip" data-placement="right" title="我是提示内容!">右侧</a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="我是提示内容!">下方</a>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="我是提示内容!">左侧</a>
+    </div>
+</body>
+</html>

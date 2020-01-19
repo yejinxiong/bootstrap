@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap4 自定义表单</h1>
+        <h5>自定义复选框</h5>
+        <form>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck" name="example">
+                <label class="custom-control-label" for="customCheck">自定义复选框</label>
+            </div>
+        </form>
+        <br/>
+
+        <h5>自定义单选框</h5>
+        <form>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+                <label class="custom-control-label" for="customRadio">自定义单选框</label>
+            </div>
+        </form>
+        <br/>
+
+        <h5>自定义控件显示在同一行</h5>
+        <form>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio1" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio1">自定义单选框 1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio2">自定义单选框 2</label>
+            </div>
+        </form>
+        <br/>
+
+        <h5>自定义选择菜单</h5>
+        <form>
+            <select name="cars" class="custom-select-sm">
+                <option selected>自定义选择菜单</option>
+                <option value="Google">Google</option>
+                <option value="Runoob">Runoob</option>
+                <option value="Taobao">Taobao</option>
+            </select>
+        </form>
+        <span>
+            可以使用 <mark class="bg-secondary text-white">.custom-select-sm</mark>、<mark class="bg-secondary text-white">.custom-select-lg</mark> 来设置它们的大小:
+        </span>
+        <form>
+            <!-- 小 -->
+            <select name="cars" class="custom-select-sm">
+                <option selected>比较小的自定义选择菜单</option>
+                <option value="Google">Google</option>
+                <option value="Runoob">Runoob</option>
+                <option value="Taobao">Taobao</option>
+            </select>
+            <!-- 大 -->
+            <select name="cars" class="custom-select-lg">
+                <option selected>比较大的自定义选择菜单</option>
+                <option value="Google">Google</option>
+                <option value="Runoob">Runoob</option>
+                <option value="Taobao">Taobao</option>
+            </select>
+        </form>
+        <br/>
+
+        <h5>自定义滑块控件</h5>
+        <form>
+            <label for="customRange">自定义滑块控件</label>
+            <input type="range" class="custom-range" id="customRange" name="points1">
+        </form>
+        <br/>
+
+        <h5>自定义文件上传控件</h5>
+        <form>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">选择文件</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

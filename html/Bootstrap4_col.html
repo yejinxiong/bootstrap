@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <style>
+        .dcontainer{background-color: azure}
+        .dcontainer-fluid{background-color: aliceblue}
+        .co{border: 1px #ccc solid}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap4 网格系统</h1>
+    </div>
+    <div class="dcontainer">
+        <div class="container">
+            <h4>.container</h4>
+            <h5>创建相等宽度的列，Bootstrap 自动布局</h5>
+            <div class="row">
+                <div class="col co">.col</div>
+                <div class="col co">.col</div>
+                <div class="col co">.col</div>
+                <div class="col co">.col</div>
+            </div>
+            <br/>
+
+            <h5>等宽响应式列</h5>
+            <div class="row">
+                <div class="col-sm-3 co">.col-sm-3</div>
+                <div class="col-sm-3 co">.col-sm-3</div>
+                <div class="col-sm-3 co">.col-sm-3</div>
+                <div class="col-sm-3 co">.col-sm-3</div>
+            </div>
+            <br/>
+
+            <h5>不等宽响应式列</h5>
+            <div class="row">
+                <div class="col-sm-4 co">.col-sm-4</div>
+                <div class="col-sm-8 co">.col-sm-8</div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+
+    <div class="dcontainer-fluid">
+        <h3>.container-fluid</h3>
+        <div class="container-fluid">
+            <h5>平板和桌面端</h5>
+            <div class="row">
+                <div class="col col-sm-3 col-md-6 co">
+                    <p>RUNOOB</p>
+                </div>
+                <div class="col col-sm-9 col-md-6 co">
+                    <p>菜鸟教程</p>
+                </div>
+            </div>
+            <br/>
+
+            <h5>平板、桌面、大桌面显示器、超大桌面显示器</h5>
+            <div class="row">
+                <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 co">
+                    <p>RUNOOB</p>
+                </div>
+                <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 co">
+                    <p>菜鸟教程</p>
+                </div>
+            </div>
+            <br/>
+
+            <h5>偏移列</h5>
+            <div class="row">
+                <div class="col-md-4 co">.col-md-4</div>
+                <div class="col-md-4 offset-md-4 co">.col-md-4 .offset-md-4</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-3 offset-md-3 co">.col-md-3 .offset-md-3</div>
+                <div class="col-md-3 offset-md-3 co">.col-md-3 .offset-md-3</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 co">.col-md-6 .offset-md-3</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

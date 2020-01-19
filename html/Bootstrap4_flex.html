@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>Bootstrap4 Flex（弹性）布局</h1>
+        <h5>弹性盒子(flexbox)</h5>
+        <div class="d-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <span>
+            创建显示在同一行上的弹性盒子容器可以使用 <code>.d-inline-flex</code> 类:
+        </span>
+        <br/>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <br/><br/>
+
+        <h5>水平方向</h5>
+        <div class="d-flex flex-row bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <span>
+            使用 <code>.flex-row-reverse</code> 类用于设置右对齐显示，即与 <code>.flex-row</code> 方向相反。
+        </span>
+        <br/>
+        <div class="d-flex flex-row-reverse bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>垂直方向</h5>
+        <span>
+            <code>.flex-column</code> 类用于设置弹性子元素垂直方向显示
+        </span>
+        <div class="d-flex flex-column">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <span>
+            <code>.flex-column-reverse</code> 用于翻转子元素：
+        </span>
+        <div class="d-flex flex-column-reverse">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>内容排列方式</h5>
+        <span>
+            <code>.justify-content-*</code> 类用于修改弹性子元素的排列方式，* 号允许的值有：start (默认), end, center, between 或 around:
+        </span>
+        <div class="d-flex justify-content-start bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>等宽</h5>
+        <span>
+            <code>.flex-fill</code> 类强制设置各个弹性子元素的宽度是一样的:
+        </span>
+        <div class="d-flex">
+            <div class="p-2 bg-info flex-fill">Flex item 1</div>
+            <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+            <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>扩展</h5>
+        <span>
+            <code>.flex-grow-1</code> 用于设置子元素使用剩下的空间。以下实例中前面两个子元素只设置了它们所需要的空间，最后一个获取剩余空间:
+        </span>
+        <div class="d-flex">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>排序</h5>
+        <code>.order</code> 类可以设置弹性子元素的排序，从 <code>.order-1</code> 到 <code>.order-12</code>，数字越低权重越高( <code>.order-1</code> 排在 <code>.order-2</code> 之前) :
+        <div class="d-flex bg-secondary">
+            <div class="p-2 bg-info order-3">Flex item 1</div>
+            <div class="p-2 bg-warning order-2">Flex item 2</div>
+            <div class="p-2 bg-primary order-1">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>外边距</h5>
+        <span>
+            <code>.mr-auto</code> 类可以设置子元素右外边距为 auto，即 <code>margin-right: auto!important</code>:
+        </span><br/>
+        <div class="d-flex bg-secondary">
+            <div class="p-2 mr-auto bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <span>
+            <code>.ml-auto</code> 类可以设置子元素左外边距为 auto，即 <code>margin-left: auto!important</code>:
+        </span><br/>
+        <div class="d-flex bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 ml-auto bg-primary">Flex item 3</div>
+        </div>
+        <br/>
+
+        <h5>子元素对齐</h5>
+        <sapn>
+            如果要设置单行的子元素对齐可以使用 <code>.align-items-*</code> 类来控制，包含的值有：<code>.align-items-start</code>,
+            <code>.align-items-end</code>, <code>.align-items-center</code>, <code>.align-items-baseline</code>, 和 <code>.align-items-stretch</code>(默认)。
+        </sapn>
+        <sapn><code>.align-items-start</code>:</sapn>
+        <div class="d-flex align-items-start bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <span><code>.align-items-end</code>:</span>
+        <div class="d-flex align-items-end bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <sapn><code>.align-items-center</code>:</sapn>
+        <div class="d-flex align-items-center bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <span><code>.align-items-baseline</code>:</span>
+        <div class="d-flex align-items-baseline bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <sapn><code>.align-items-stretch</code> (默认):</sapn>
+        <div class="d-flex align-items-stretch bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+
+        <h5>指定子元素对齐</h5>
+        <span>
+            如果要设置指定子元素对齐对齐可以使用 <code>.align-self-*</code> 类来控制，包含的值有：<code>.align-self-start</code>,
+            <code>.align-self-end</code>, <code>.align-self-center</code>, <code>.align-self-baseline</code>, 和 <code>.align-self-stretch</code>(默认)。
+        </span><br/>
+        <sapn><code>.align-self-start</code>:</sapn>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-start">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <span><code>.align-self-end</code>:</span>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-end">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <sapn><code>.align-self-center</code>:</sapn>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-center">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <span><code>.align-self-baseline</code>:</span>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-baseline">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <sapn><code>.align-self-stretch</code>(默认):</sapn>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-stretch">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>

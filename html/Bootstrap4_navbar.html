@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Bootstrap4 导航栏</h1>
+        <h5>导航栏</h5>
+        <!-- 小屏幕上水平导航栏会切换为垂直的 -->
+        <nav class="navbar navbar-expand-sm bg-light">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </nav>
+        <br/>
+
+        <h5>垂直导航栏</h5>
+        <!-- 垂直导航栏 -->
+        <nav class="navbar bg-light">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </nav>
+        <br/>
+    </div>
+    <br/><br/>
+
+    <h5>品牌/logo导航栏</h5>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <h3>品牌/Logo</h3>
+        <p>.navbar-brand 类用于高亮显示品牌/Logo:</p>
+    </div>
+    <br/><br/>
+
+    <h5>自适应导航栏</h5>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="https://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <h3>品牌 / Logo</h3>
+        <p>果使用图片，可以使用 .navbar-brand 类来设置图片自适应导航栏。</p>
+    </div>
+    <br/><br/>
+
+    <h5>折叠导航栏</h5>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="https://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;">
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br/>
+
+    <h5>导航栏使用下拉菜单</h5>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!--Brand-->
+        <a href="#" class="navbar-brand">Logo</a>
+        <!-- Linsks -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link2</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown link</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Link1</a>
+                    <a href="#" class="dropdown-item">Link2</a>
+                    <a href="#" class="dropdown-item">Link3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+
+    <h5>导航栏的表单与按钮</h5>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <br/>
+
+    <h5>固定导航栏</h5>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="https://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid" style="margin-top: 80px;">
+        <h6>固定导航栏</h6>
+        <p>导航栏可以固定在头部或底部</p>
+        <h6>滚动页面查看效果</h6>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
